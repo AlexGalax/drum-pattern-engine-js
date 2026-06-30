@@ -1,0 +1,26 @@
+{
+  "name": "pattern-engine",
+  "version": "1.0.0",
+  "description": "Universal drum-pattern + song-arrangement generator. Emits a device-agnostic song structure (roles, velocity, micro-timing, meter). No runtime dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "exports": { ".": "./src/index.js" },
+  "files": ["src", "README.md", "LICENSE"],
+  "sideEffects": false,
+  "scripts": {
+    "format": "prettier --write \"src/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\"",
+    "lint": "eslint src",
+    "check": "npm run format:check && npm run lint"
+  },
+  "keywords": ["drum", "sequencer", "music", "generator", "pattern", "groove", "arrangement"],
+  "author": "Alexander Schornberg",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/AlexGalax/pattern-engine-js.git" },
+  "homepage": "https://github.com/AlexGalax/pattern-engine-js#readme",
+  "bugs": { "url": "https://github.com/AlexGalax/pattern-engine-js/issues" },
+  "engines": { "node": ">=18" },
+  "publishConfig": { "access": "public", "provenance": true },
+  "devDependencies": { "eslint": "^9", "@eslint/js": "^9", "prettier": "^3" }
+}
