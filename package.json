@@ -1,5 +1,5 @@
 {
-  "name": "pattern-engine",
+  "name": "drum-pattern-engine-js",
   "version": "1.0.0",
   "description": "Universal drum-pattern + song-arrangement generator. Emits a device-agnostic song structure (roles, velocity, micro-timing, meter). No runtime dependencies.",
   "type": "module",
@@ -17,9 +17,9 @@
   "keywords": ["drum", "sequencer", "music", "generator", "pattern", "groove", "arrangement"],
   "author": "Alexander Schornberg",
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/AlexGalax/pattern-engine-js.git" },
-  "homepage": "https://github.com/AlexGalax/pattern-engine-js#readme",
-  "bugs": { "url": "https://github.com/AlexGalax/pattern-engine-js/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/AlexGalax/drum-pattern-engine-js.git" },
+  "homepage": "https://github.com/AlexGalax/drum-pattern-engine-js#readme",
+  "bugs": { "url": "https://github.com/AlexGalax/drum-pattern-engine-js/issues" },
   "engines": { "node": ">=18" },
   "publishConfig": { "access": "public", "provenance": true },
   "devDependencies": { "eslint": "^9", "@eslint/js": "^9", "prettier": "^3" }
