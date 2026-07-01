@@ -1,5 +1,5 @@
 {
-  "name": "drum-pattern-engine-js",
+  "name": "drum-pattern-engine",
   "version": "1.0.0",
   "description": "Universal drum-pattern + song-arrangement generator. Emits a device-agnostic song structure (roles, velocity, micro-timing, meter). No runtime dependencies.",
   "type": "module",

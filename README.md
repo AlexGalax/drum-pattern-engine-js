@@ -1,26 +1,27 @@
-# pattern-engine (JS)
+# drum-pattern-engine (JS)
 
 Universal drum-pattern + song-arrangement generator. **No runtime dependencies.**
 
 The engine is **device-agnostic**: it emits a neutral *song* structure (instrument **roles**,
 steps, velocity, micro-timing, bars, repeats, meter). A separate builder package turns that
-into a concrete device format — e.g. [`smpltrek-builder`](../smpltrek-builder-js) writes a
+into a concrete device format — e.g.
+[`smpltrek-builder`](https://github.com/AlexGalax/smpltrek-builder-js) writes a
 Sonicware SmplTrek project. The same song could drive MIDI, another groovebox, etc.
 
 This is the **single source of truth** for the engine; the Python port
-([`pattern-engine-py`](https://github.com/AlexGalax/pattern-engine-py)) is kept byte-identical
-via a parity check.
+([`drum-pattern-engine-py`](https://github.com/AlexGalax/drum-pattern-engine-py)) is kept
+byte-identical via a parity check.
 
 ## Install
 
 ```bash
-npm install pattern-engine
+npm install drum-pattern-engine
 ```
 
 ## Usage
 
 ```js
-import { arrange } from 'pattern-engine';
+import { arrange } from 'drum-pattern-engine';
 
 const params = { density: 0.6, instrumentDensity: 0.65, energy: 0.75, swing: 0.15, ghost: 0.3 };
 const song = arrange(params, { length: 'full', bpm: 124, seed: 12345, structure: 'electronic' });
@@ -70,6 +71,11 @@ npm install        # eslint + prettier
 npm run format
 npm run lint
 ```
+
+## Legal
+
+SmplTrek and Sonicware are trademarks of Sonicware Inc. This is an independent, unofficial tool
+— not affiliated with, endorsed by, or sponsored by Sonicware.
 
 ## License
 
